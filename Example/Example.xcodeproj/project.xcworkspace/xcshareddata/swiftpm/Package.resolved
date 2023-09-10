@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "statefulcontainer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stateman92/StatefulContainer",
+      "state" : {
+        "revision" : "42f2ba34185daa044221489951d01e588ce94549",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
