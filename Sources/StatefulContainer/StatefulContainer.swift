@@ -9,10 +9,10 @@ import SwiftUI
 
 public struct StatefulContainer<Value, Content: View> {
     @State private var value: Value
-    @ViewBuilder private var content: (Binding<Value>) -> Content
+    @ViewBuilder private let content: (Binding<Value>) -> Content
 
     public init(value: Value, content: @escaping (Binding<Value>) -> Content) {
-        _value = State(initialValue: value)
+        _value = .init(initialValue: value)
         self.content = content
     }
 }
